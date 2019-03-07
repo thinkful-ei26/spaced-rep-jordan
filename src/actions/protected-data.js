@@ -41,6 +41,7 @@ export const fetchProtectedData = () => (dispatch, getState) => {
 
             const returnObj = {
                 currentWord:data[0].text, 
+                currentAnswer: data[0].answer,
                 numberOfCorrectAnswersForWord:data[0].score, 
                 wordsAttempts:data[0].attempts
             }

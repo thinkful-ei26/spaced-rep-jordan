@@ -36,29 +36,27 @@ class AnswerFeedback extends Component {
 
         const feedbackForAnswer = () => {
 
-
             const displayWord = () => {
-                
                 if(this.props.previousQuestion !== undefined) {
                     return this.props.previousQuestion.text
                 }
             }
-            if(this.props.answeredCorrectly === true) {  
-                              
+
+            let answer = this.props.currentAnswer.currentAnswer
+
+            if(this.props.answeredCorrectly === true) { 
                 return (
                 <div>
                     <div> Nice job! Your answer for {displayWord()} was correct!</div>
-                    <div> Correct answer: {this.props.correctAnswer}</div>
                 </div>
                 );
-            } if(this.props.answeredCorrectly === false && this.props.correctAnswer === "incorrect") { 
+            } else { 
                 return (
-                <div>
-                    <div> Your answer for {displayWord()} was incorrect. Try Again</div>                   
+                <div className="wrong-answer">
+                    <p id="wrong-answer-response"> Your answer for {displayWord()} was incorrect. The correct answer is "{answer}". Try Again. </p>   
                 </div>
                 )
             }
-            return '';
         }
         
 
@@ -80,14 +78,14 @@ class AnswerFeedback extends Component {
 }
 
 const mapStateToProps = (state) => {
-
     return {
         answeredCorrectly:state.serverResponse.response.answeredCorrectly, 
         correctAnswer:state.serverResponse.response.correctAnswer || '', 
         masteredWordsArray:state.serverResponse.response.allMasteredWords || [], 
         initialMasteredWordsArray: state.auth.currentUser.masteredWords || [], 
-        previousQuestion:state.serverResponse.response.currentWord || ''
+        previousQuestion:state.serverResponse.response.currentWord || '',
+        currentAnswer: state.protectedData.data,
     }
 }
-//
+
 export default connect(mapStateToProps)(AnswerFeedback);

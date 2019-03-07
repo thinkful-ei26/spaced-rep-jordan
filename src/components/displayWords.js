@@ -34,6 +34,7 @@ class DisplayWords extends React.Component {
 } 
 
 const mapStateToProps = state => {
+    // console.log('state:', state);
     const {currentUser} = state.auth;
 
     return {
@@ -41,8 +42,7 @@ const mapStateToProps = state => {
         name: `${currentUser.firstName} ${currentUser.lastName}`,
         currentQuestion: state.protectedData.data,
         nextQuestion:state.question.nextQuestion,
-        
-
+        currentAnswer: state.protectedData.data.answer
     };
 };
 //
