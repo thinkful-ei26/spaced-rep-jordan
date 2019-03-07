@@ -42,7 +42,7 @@ class AnswerFeedback extends Component {
                 }
             }
 
-            let answer = this.props.currentAnswer.currentAnswer
+            let answer = this.props.currentAnswer
 
             if(this.props.answeredCorrectly === true) { 
                 return (
@@ -53,7 +53,7 @@ class AnswerFeedback extends Component {
             } else { 
                 return (
                 <div className="wrong-answer">
-                    <p id="wrong-answer-response"> Your answer for {displayWord()} was incorrect. The correct answer is "{answer}". Try Again. </p>   
+                    <p id="wrong-answer-response"> Your answer for {displayWord()} was incorrect. The correct answer is "{answer}". Enter the correct answer now and try again later. </p>   
                 </div>
                 )
             }
@@ -84,7 +84,7 @@ const mapStateToProps = (state) => {
         masteredWordsArray:state.serverResponse.response.allMasteredWords || [], 
         initialMasteredWordsArray: state.auth.currentUser.masteredWords || [], 
         previousQuestion:state.serverResponse.response.currentWord || '',
-        currentAnswer: state.protectedData.data,
+        currentAnswer: state.protectedData.data.currentAnswer,
     }
 }
 
