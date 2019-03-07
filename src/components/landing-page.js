@@ -13,8 +13,7 @@ export function LandingPage(props) {
 
     return (
         <div className="landing-page">
-            <h2 className="landing-h2">Welcome To Alternis Vicibus</h2>
-            <h4 className="landing-h4-sub">A smarter way to learn Medical Terminology</h4>
+            <h2 className="landing-h2">About The App</h2>
             <h4 className="landing-h4-main">
             Using our space-repetition algorithm designed to increase learnability, we've designed these professional medical flash cards to recurr based on your answers.<br/><br/>Using one flash card at a time, you will be prompted to submit an english translation. Get it right, you may not see the card for a while. Get it wrong, you might be seeing it sooner than you think.<br/><br/>Sign in to test your skills!</h4>
             <LoginForm />
