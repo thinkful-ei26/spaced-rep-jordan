@@ -49,7 +49,7 @@ class AnswerFeedback extends Component {
                 <div>
                     <div> Nice job! Your answer for {displayWord()} was correct!</div>
                 </div>
-                );
+                ); 
             } else { 
                 return (
                 <div className="wrong-answer">
