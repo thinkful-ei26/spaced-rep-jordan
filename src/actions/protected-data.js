@@ -30,25 +30,18 @@ export const fetchProtectedData = () => (dispatch, getState) => {
         }
     })
         .then(res => normalizeResponseErrors(res))
-        .then(res => {
-
-            if (!res.ok) {
-                throw new Error(res.statusText);
-            }
-            return res.json();
-            })
+        .then(res => res.json())
         .then((data) => { 
 
-            const returnObj = {
+            let returnObj = {
                 currentWord:data[0].text, 
                 currentAnswer: data[0].answer,
                 numberOfCorrectAnswersForWord:data[0].score, 
                 wordsAttempts:data[0].attempts
             }
             dispatch(fetchProtectedDataSuccess(returnObj))
-        }
-        )
-        // .then(({data}) => dispatch(fetchProtectedDataSuccess(data.current.value)))
+        })
+
         .catch(err => {
             dispatch(fetchProtectedDataError(err));
         });
