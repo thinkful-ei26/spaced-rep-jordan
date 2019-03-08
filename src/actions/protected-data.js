@@ -44,6 +44,7 @@ export const fetchProtectedData = () => (dispatch, getState) => {
         })
 
         .catch(err => {
+            console.log('err:', err)
             dispatch(fetchProtectedDataError(err));
         });
 };
