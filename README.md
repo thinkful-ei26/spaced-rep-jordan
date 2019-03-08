@@ -16,11 +16,11 @@ A simple, smarter way to learn Medical Terminology using spaced repition logic &
   - [Mongoose](https://github.com/Automattic/mongoose)
   - [mLab](https://mlab.com/)
 
-###Live version: 
+### Live version: 
 - https://alternis-vicibus.herokuapp.com/
 
-###Server Source Code: 
+### Server Source Code: 
 - https://github.com/thinkful-ei26/spaced-rep-jordan-server
 
 ### ScreenShot
-<img src='/assets/alternisvibibus.png' alt='App Screenshot' width='300px'/>
+<img src='../assets/alternisvibibus.png' alt='App Screenshot' width='300px'/>
