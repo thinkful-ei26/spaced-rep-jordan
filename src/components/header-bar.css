@@ -1,33 +1,24 @@
 .header-bar {
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    opacity: 0.8;
-    opacity: 0.8;
-    background-image: linear-gradient(
-        to right bottom, 
-        rgba(219, 217, 214, 0.7), 
-        rgba(177, 175, 174, 0.7)),
-        url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-pd9-jj-tong-0033_1_1.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1000&s=409ae130f3db7b82bb62484e416a8ff8');
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
   }
 
 .header-bar-ul {
     display: contents;
     list-style: none;
-    margin: 15px;
     border: 1px solid #cafff3;
     color:  #4e6e67;
-    font-size: calc(2px + 2vmin);
+    padding-bottom: 0px;
 } 
 
 .header-bar-user {
-    font-size: calc(4px + 2vmin);
+    font-size: 14px;
+    padding-top: 0px;
+    font-weight: bold;
 }
 
 .header-bar-button {
     margin: 10px;
-    height: 15px;
     box-align: center;
 }

@@ -1,39 +1,43 @@
 .landing-page {
-    background-color: #bdb7b79c;
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    background-color: #bdb7b757;
+
     color: rgb(0, 0, 0);
   }
 
   .landing-h2 {
       padding: 0px;
       margin: 5px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   .landing-h4-sub {
     padding: 0px;
     margin: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
-    font-size: calc(8px + 2vmin);
+  }
+
+  .about {
+    color: rgba(18, 80, 61, 0.897);
+    letter-spacing: 1px;
   }
 
   .landing-h4-main {
-    padding: 25px;
+    padding: 5px;
     margin: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: calc(8px + 2vmin);
   }
 
+  /* .header-bar {
+    visibility: hidden;
+  } */
+
   .landing-register {
-    padding: 0px;
     margin: 5px;
-    font-size: calc(2px + 2vmin);
+  }
+
+  .header-h1 {
+    color: rgb(18, 80, 61);
+    font-size: 52px;
+    letter-spacing: 5px;
   }
 
 

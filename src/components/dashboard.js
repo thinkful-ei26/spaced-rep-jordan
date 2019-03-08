@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
 import {fetchProtectedData} from '../actions/protected-data';
 import AnswerInput from './answerInput';
+import HeaderBar from './header-bar';
 
 import AnswerFeedback from './answerFeedback';
 import DisplayWords from './displayWords';
@@ -38,14 +39,15 @@ export class Dashboard extends React.Component {
 
                     return <span>{score}%</span>
                 } 
-                else { return <span>You haven't attempted the current word</span>}
+                else { return <span> </span>}
             }
         }
         return (
             <div className="dashboard">
-                <div className="dashboard-name">Hello {this.props.name.toUpperCase()}</div>
+                <HeaderBar />
+                <div className="dashboard-name"> You're on your way to becoming a master, {this.props.name.toUpperCase()}!</div>
                 <div className="dashboard-current-score">
-                <b>Your score for the current word is:</b>{userScore()} 
+                Current Score: {userScore()} 
                 </div>    
                 <AnswerFeedback />           
                 <DisplayWords />
