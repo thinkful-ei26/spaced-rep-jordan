@@ -5,9 +5,9 @@ import { fetchProtectedData } from '../actions/protected-data';
 
 class AnswerFeedback extends Component {
 
-    componentWillMount(){
-        this.props.dispatch(feedback());
-    }
+    // componentWillMount(){
+    //     this.props.dispatch(feedback());
+    // }
 
     render() {
         
