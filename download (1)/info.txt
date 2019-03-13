@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+
+font name: Marta_Regular
+font link: https://www.behance.net/gallery/7434601/Marta-Font
+font author: Michael Chereda
+font author site: https://www.behance.net/mchereda
+
+icon designer: André Luiz
+icon designer link: /aluizgollo
+        
+{"bg":"#2A3520","icon":"#D9C6C8","font":"#FFFFFF"}
+      
