@@ -24,3 +24,22 @@ A simple, smarter way to learn Medical Terminology using spaced repition logic &
 
 ### ScreenShot
 <img src='./src/assets/alternisvicibus.png' alt='App Screenshot' width='300px'/>
+
+### API
+```
+/api
+.
+├── /auth
+│   └── POST
+│       ├── /users
+│       └── /refresh
+├── /users
+│   └── POST
+│       └── /
+├── /questions
+│   └── GET
+│       ├── /
+│   └── PUT
+│       ├── /current
+│       ├── /unclaim/:userId
+```
